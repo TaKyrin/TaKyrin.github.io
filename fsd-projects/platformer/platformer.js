@@ -31,16 +31,30 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
+createPlatform(150,650,75,10) 
+ createPlatform(350,600,75,10)
+ createPlatform(500,500,75,10)
+createPlatform(700,400,75,10)
+createPlatform(900,300,75,10)
+createPlatform(1100,200,50,15)
+createPlatform(1300,150,75,10)
 
 
 
 
     // TODO 3 - Create Collectables
-
+createCollectable("diamond",1300,100,0.5,0.7);
+createCollectable("max",750,350,0.5,0.4);
+createCollectable("database",375,550,0.5,0.6)
 
 
     
     // TODO 4 - Create Cannons
+createCannon("bottom",425,700)
+createCannon("bottom",800,750 )
+createCannon("right",680,550)
+createCannon("bottom",1200,800)
+}
 
 
     
@@ -51,4 +65,4 @@ $(function () {
   }
 
   registerSetup(setup);
-});
+)};
