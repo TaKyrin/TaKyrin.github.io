@@ -60,17 +60,19 @@
         }
 
         // changes the text displayed on the Box
-        function changeBoxText(points) {
-          box.text(newText);
+        function changeBoxText(newText) {
+          box.text(points);
         }
 
         //////////////////////////////////////////////////////////////////
-        /////////////////// YOUR CODE BELOW HERE /////////////////////////
+        /////////////////// YOUR CODE BELOW HERE /////////////////////f////
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
         var positionX = 0;
-
+positionX = 0;
+          var speed = 10
+          var points = 0
 
 
 
@@ -82,8 +84,16 @@
          */
         function update() {
           moveBoxTo(positionX)
-          positionX += 10;
-           var points(0)
+          positionX = positionX + speed;
+            if (positionX > boardWidth) {
+  // Code to reverse speed goes here
+  speed *= -1
+} if (positionX < 0){
+  speed *= -1
+}
+
+           
+           
 
         
 
@@ -97,14 +107,18 @@
          * - increase the speed
          * - move the box to the left side of the screen.
          */
-        function handleBoxClick(  ) { 
-           positionX = 0
-           changeBoxText(0)
+        function handleBoxClick(){ 
+           
+           changeBoxText(points);
+           points = points + 1;
+            speed = 3 * points + 10
 
 
 
 
-        }
+
+
+        };
 
 
         
